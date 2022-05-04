@@ -43,7 +43,7 @@ def main_screen():
     for_unfilled_fields = None
     global main_screenn
     main_screenn = Tk()
-    main_screenn.iconbitmap("C:/btu python/sturua/tkinter/hell.jpg")
+    # main_screenn.iconbitmap("C:/btu python/sturua/tkinter/hell.jpg")
     main_screenn.geometry("700x500")
     main_screenn.title("Login")
     label = Label(text="Please enter details below", fg='#000000')
@@ -172,7 +172,7 @@ def profile_screen():
     c.execute('''SELECT * FROM user where GMAIL = ? and password = ?''',(username1, password1))
     conn.commit()
     for row in c.fetchall():
-        info = Label(text="Username: " + row[0] + "\n|| Surname: " + row[1] + "\n|| Mail: " + row[2] + "\n|| Age: " + str(row[3]) + "\n||Password: " + row[4] + "\n|| Balance: " + str(row[5]))
+        info = Label(text="Username: " + row[0] + "\n Surname: " + row[1] + "\n Mail: " + row[2] + "\n Age: " + str(row[3]) + "\n Password: " + row[4] + "\n Balance: " + str(row[5]))
         info.pack()
       
 main_screen()
